@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --font-family: "Inter", sans-serif;
+    --second-family: "Manrope", sans-serif;
+    --main-background: #1c1c1e;
+    --button-color: #ea6d2d;
+    --white-text: #fff;
+    --header-background: #121212;
+    --section-selected-backfground: #ea6d2d1a;
+    --grey-text: #a1a1a6;
+    --gold: #FFC107;
+    --cream: #FEFDDF;
+}

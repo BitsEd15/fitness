@@ -1,0 +1,45 @@
+/* СМАРТФОН */
+.g-container {
+    max-width: 407px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.g-button {
+    border-radius: 8px;
+    padding: 16px 24px;
+    background-color: var(--button-color);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--white-text);
+    border: none;
+    cursor: pointer;
+}
+
+/* ПЛАНШЕТ */
+@media (min-width: 768px) {
+    .g-container {
+        max-width: 832px;
+        padding: 0 32px;
+    }
+
+    .g-button {
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* ДЕСКТОП */
+@media (min-width: 1440px) {
+    .g-container {
+        max-width: 1600px;
+        padding: 0 80px;
+    }
+    .g-button {
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
