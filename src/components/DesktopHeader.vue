@@ -70,7 +70,7 @@ let modalIsOpen = ref(false);
         font-family: var(--second-family);
         font-weight: 800;
         font-size: 24px;
-        color: var(--white-text);
+        color: var(--logo-blue);
 
         span {
             color: var(--button-color)

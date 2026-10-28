@@ -1,10 +1,17 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, defineEmits } from 'vue';
 import BurgerMenu from './BurgerMenu.vue';
 import { sectionsStorage } from '@/stores/sections.js';
 import ModalWindow from './ModalWindow.vue';
 const sectionsItems = sectionsStorage();
 let modalIsOpen = ref(false);
+const emit = defineEmits(['selectSection']);
+
+const handleSectionSelect = (section) => {
+    sectionsItems.changeSection(section);
+    emit('selectSection', section);
+}
+
 </script>
 
 <template>
@@ -18,14 +25,16 @@ let modalIsOpen = ref(false);
                 </h1>
             </div>
             <div class="mob-tab-header__burger-container">
-                <button class="g-button mob-tab-header__btn-tablet" @click="modalIsOpen=true">Бесплатная тренировка</button>
+                <button class="g-button mob-tab-header__btn-tablet" @click="modalIsOpen = true">Бесплатная
+                    тренировка</button>
                 <BurgerMenu :sections="sectionsItems.sectionsArr" :currentSection="sectionsItems.currentSection"
-                    :btnText="sectionsItems.burgerMenuBtn" @selectSection="sectionsItems.changeSection"
+                    :btnText="sectionsItems.burgerMenuBtn" @selectSection="handleSectionSelect"
                     :promo="sectionsItems.promoSection" />
             </div>
             <BurgerMenu id="burger-img-phone" :sections="sectionsItems.sectionsArr"
                 :currentSection="sectionsItems.currentSection" :btnText="sectionsItems.burgerMenuBtn"
-                @selectSection="sectionsItems.changeSection" :promo="sectionsItems.promoSection" @openModal="modalIsOpen=true"/>
+                @selectSection="handleSectionSelect" :promo="sectionsItems.promoSection"
+                @openModal="modalIsOpen = true" />
         </div>
         <ModalWindow v-if="modalIsOpen" @close="modalIsOpen = false" />
     </div>
@@ -65,7 +74,7 @@ let modalIsOpen = ref(false);
         font-family: var(--second-family);
         font-weight: 800;
         font-size: 20px;
-        color: var(--white-text);
+        color: var(--logo-blue);
 
         span {
             color: var(--button-color)

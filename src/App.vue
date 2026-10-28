@@ -1,24 +1,31 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router';
-import HomeView from './views/HomeView.vue';
-
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-    <div>
-        <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
-        </nav>
-
+    <div class="app-root">
         <RouterView />
     </div>
-
 </template>
 
 <style>
-	nav>*{
-		color: white;
-		margin: 0 10px 0 0;
-	}
+
+
+/* Гарантируем минимальную высоту */
+html, body, #app {
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Корневой контейнер на всю высоту */
+.app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Убираем старую навигацию, если не нужна */
+nav {
+    display: none;
+}
 </style>

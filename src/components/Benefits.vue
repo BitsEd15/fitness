@@ -14,7 +14,6 @@ const benefitCards = benefitsStorage();
                 <div class="benefits__card-text-container">
                     <h3>{{ el.title }}</h3>
                     <p>{{ el.description }}</p>
-                    <button class="g-button g-button--benefits">{{ el.btnText }}</button>
                 </div>
             </div>
         </div>
@@ -62,7 +61,7 @@ const benefitCards = benefitsStorage();
         font-weight: 400;
         font-size: 13px;
         line-height: 140%;
-        color: var(--main-background);
+        color: var(--btn-text);
     }
 }
 

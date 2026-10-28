@@ -61,9 +61,9 @@ onUnmounted(() => {
 .hero-section__title {
     font-family: var(--second-family);
     font-weight: 800;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 120%;
-    color: var(--white-text);
+    color: var(--text);
 
     span {
         white-space: nowrap;
@@ -76,7 +76,7 @@ onUnmounted(() => {
     font-weight: 700;
     font-size: 20px;
     line-height: 120%;
-    color: var(--white-text);
+    color: var(--text);
 }
 
 .hero-section__description {
@@ -85,7 +85,7 @@ onUnmounted(() => {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    color: var(--white-text);
+    color: var(--text);
 }
 
 .hero-section__gym {
@@ -96,7 +96,7 @@ onUnmounted(() => {
     color: var(--button-color);
 
     span {
-        color: var(--white-text);
+        color: var(--text);
     }
 }
 
@@ -125,8 +125,8 @@ onUnmounted(() => {
 }
 
 .g-button--hero-gold {
-    background-color: var(--gold);
-    color: var(--main-background);
+    background-color: var(--logo-blue);
+    color: var(--btn-text);
     animation: shake 0.5s ease-in-out infinite;
 }
 

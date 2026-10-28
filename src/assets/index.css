@@ -4,12 +4,17 @@
 :root {
     --font-family: "Inter", sans-serif;
     --second-family: "Manrope", sans-serif;
-    --main-background: #1c1c1e;
+    --main-background: #F4F4F4;
     --button-color: #ea6d2d;
     --white-text: #fff;
     --header-background: #121212;
     --section-selected-backfground: #ea6d2d1a;
     --grey-text: #a1a1a6;
+    --text: #041B1E;
     --gold: #FFC107;
     --cream: #FEFDDF;
+    --logo-blue:#12D8D8;
+    --btn-text: #062124;
+    --tarrifs-title-text: #041B1E;
+    --tarrif-card-background-dark: #043e46;
 }

@@ -140,7 +140,7 @@ const handleSelect = (section) => {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
-    color: #fff;
+    color: var(--white-text);
     transition: all 0.2s ease-in-out;
 }
 
